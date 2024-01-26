@@ -27,44 +27,52 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### `/MusicUploadForm/MusicUploadForm.js`
 
-### Analyzing the Bundle Size
+This component allows users to upload and submit music files to the application. 
+It provides a user-friendly interface for users to select and upload their music files with ease.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### `/SongList/AddAllButton.js`
 
-### Making a Progressive Web App
+This component allows users to select all available music files.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### `/SongList/PlayAllButton.js`
 
-### Advanced Configuration
+This component allows users to play all available music files sequentially.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### `/SongList/SongList.js`
 
-### Deployment
+This component displays a list of all songs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### `/SongList/SongRow.js`
 
-### `npm run build` fails to minify
+A Component to render individual song details within the `SongList`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Libraries
+
+### `react-loader-spinner`
+
+This library is used to display a loading spinner component in the application.
+To use this library, make sure it is installed by running: `npm install react-loader-spinner --save`
+
+## Preprocessors
+
+### `Sass`
+
+Sass is a CSS preprocessor used in this project.
+To use Sass in your project, install it by running: `npm install sass --save`
+
+## State Management
+
+### `@reduxjs/toolkit`
+
+This project utilizes `@reduxjs/toolkit` for state management.
+To use `@reduxjs/toolkit`, make sure it is installed by running: `npm install @reduxjs/toolkit --save`

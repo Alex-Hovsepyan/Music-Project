@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.songlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px; 
+
+    svg {
+        cursor: pointer;
+    }
+
+    .songlist_container {
+        width: 700px;
+        background-color: white;
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #0171F9;
+
+            .left_part {
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    margin-right: 5px;
+                    padding: 3px 10px;
+                    font-weight: bold;
+                    border: solid 1px #EE626B;
+                    border-radius: 2px;
+                    color: white;
+                    background-color: #EE626B;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #0171F9;
+                        border-color: white;
+                    }
+
+                    svg {
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .right_part {
+                display: flex;
+                gap: 10px;
+
+                select {
+                    border-radius: 4px;
+                    color: #1E1E1E;
+                    font-weight: bold;
+                }
+
+                div {
+                    display: flex;
+                    input {
+                        padding-left: 10px;
+                        border: none;
+                    }
+
+                    button {
+                        border: none;
+                        background-color: #EE626B;
+                        padding: 5px 10px;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        table {
+            width: 100%;
+
+            tr {
+                text-align: left;
+                background-color: #0171F9;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: #EE626B;
+                }
+
+                th {
+                    padding: 10px 60px 10px 10px;
+                    font-size: 15px;
+                    color: #1E1E1E;
+                
+                }
+
+                .active {
+                    color: #EE626B;
+                }
+
+                td {
+                    padding: 10px;
+                    font-size: 15px;
+                    color: white;
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (max-width : 600px){
+    .songlist .songlist_container {
+        header {
+            flex-direction: column;
+            gap: 20px;
+
+            .right_part {
+                flex-direction: column;
+            }
+        }
+
+        table tr {
+            td, th {
+                padding: 5px;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width : 800px){
+    .songlist .songlist_container {
+        width: 100%;
+    }
+}
